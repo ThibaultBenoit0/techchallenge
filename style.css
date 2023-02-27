@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cardo:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cardo:wght@400;700&family=Comfortaa&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 243, 210, 0.466);
+}
+
+.topbar {
+  background: rgb(252, 234, 185);
+  width: 100%;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #685a4c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6em;
+}
+nav a:hover {
+  color: #000;
+  transition: 0.3s;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  padding: 0px 60px;
+  font-family: "caesar dressing", sans-serif;
+  font-size: 1.3em;
+}
+
+#logo {
+  flex: 1;
+}
+
+#logo img {
+  width: 70px;
+  margin-left: 60px;
+  transition: rotate 1s;
+}
+
+#logo img:hover {
+  rotate: 90deg;
+}
+
+#logo a {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  background: no-repeat center center / cover url("img/BG.jpg");
+  height: 600px;
+  width: 100%;
+  opacity: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  font-family: "caesar dressing", sans-serif;
+  color: #e4ba32;
+  text-shadow: 2px 2px 3px black;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.438);
+  font-size: 2.8em;
+}
+
+.text-index {
+  padding: 15px;
+  font-family: "comfortaa", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 243, 210, 0.466);
+}
+
+footer {
+  background-color: rgb(255, 243, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-royal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 0;
+  overflow: hidden;
+}
+
+.container-royal img {
+  width: 400px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.555);
+}
+.container-royal p {
+  text-align: center;
+  font-family: "comfortaa", sans serif;
+  font-size: 1.5em;
+}
+
+.text-family {
+  padding: 20px 0 0 0;
+}
+
+.text-family h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "caesar dressing", sans serif;
+  font-size: 3em;
+}
+
+/*--------------------TABLE--------------------------------------------*/
+.asset-title {
+  display: flex;
+  justify-content: center;
+  font-family: "caesar dressing", sans serif;
+  font-size: 3em;
+}
+
+.table-style {
+  border-collapse: collapse;
+  min-width: 400px;
+  width: auto;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  bottom: 20px;
+  border: 2px solid #e4ba32;
+}
+
+thead tr {
+  background-color: #e4ba32;
+  color: #fff;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 20px;
+}
+
+tbody tr,
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/*--------------------CONTACT--------------------------------------------*/
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contact-message {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "caesar dressing", sans serif;
+  font-size: 3em;
+}
+
+/*-----------responsive-------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+}
